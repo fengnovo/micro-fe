@@ -1,5 +1,7 @@
 ### 微前端 qiankun
 
+基座是 vue2
+
 #### 参考实践
 
 ##### qiankun
