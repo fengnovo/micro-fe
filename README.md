@@ -2,6 +2,9 @@
 
 基座是 vue2
 
+增加了各个应用的路由  
+1.基座用了history路由，各个子应用用了hash路由
+
 #### 参考实践
 
 ##### qiankun
@@ -32,3 +35,4 @@ yarn add
 yarn start
 // 或npm start
 ```
+

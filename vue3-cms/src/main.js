@@ -1,12 +1,13 @@
 import './public-path'
 import { createApp } from 'vue'
+import router from './router'
 import App from './App.vue'
 
 let instance = null;
 function render(props = {}) {
   const { container } = props;
   instance = createApp(App);
-  instance.mount(container ? container.querySelector('#app') : '#app');
+  instance.use(router).mount(container ? container.querySelector('#app') : '#app');
 }
 
 

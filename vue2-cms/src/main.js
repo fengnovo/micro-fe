@@ -1,5 +1,6 @@
 import './public-path' //需要放在最顶部
 import Vue from 'vue'
+import router from './router'
 import App from './App.vue'
 
 
@@ -11,6 +12,7 @@ function render(props = {}) {
   const { container } = props;
   instance = new Vue({
     render: h => h(App),
+    router,
   }).$mount(container ? container.querySelector('#app') : '#app');
 }
 

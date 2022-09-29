@@ -3,6 +3,7 @@ const { name } = require("./package");
 module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
+    // mode: 'development',
     output: {
       library: `${name}-[name]`,
       libraryTarget: "umd", // 把微应用打包成 umd 库格式

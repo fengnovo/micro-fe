@@ -11,22 +11,22 @@ Vue.config.productionTip = false
 
 registerMicroApps([
   {
-    name: 'vue2-cms',
-    entry: '//localhost:8080', // http://localhost:8080/child/vue-hash/
+    name: 'vue2-cms-app',
+    entry: '//localhost:8080',
     container: '#subapp-container',
-    activeRule: '/vue2',
+    activeRule: '/vue2-cms-app',
   },
   {
-    name: 'vue3-cms',
-    entry: '//localhost:8081', // http://localhost:8080/child/vue-hash/
+    name: 'vue3-cms-app',
+    entry: '//localhost:8081',
     container: '#subapp-container',
-    activeRule: '/vue3',
+    activeRule: '/vue3-cms-app',
   },
   {
-    name: 'react-cms',
-    entry: '//localhost:3000', // http://localhost:8080/child/vue-hash/
+    name: 'react-cms-app',
+    entry: '//localhost:3000',
     container: '#subapp-container',
-    activeRule: '/react',
+    activeRule: '/react-cms-app',
   },
 ]);
 
@@ -35,4 +35,4 @@ start();
 new Vue({
   router,
   render: h => h(App),
-}).$mount('#root-app');
+}).$mount('#app');

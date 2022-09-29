@@ -2,7 +2,7 @@ import './public-path';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Router from './router'
 import reportWebVitals from './reportWebVitals';
 
 /**
@@ -17,7 +17,7 @@ import reportWebVitals from './reportWebVitals';
  * 应用每次进入都会调用 mount 方法，通常我们在这里触发应用的渲染方法
  */
 export async function mount(props) {
-  ReactDOM.render(<App />, props.container ? props.container.querySelector('#root') : document.getElementById('root'));
+  ReactDOM.render(<Router />, props.container ? props.container.querySelector('#root') : document.getElementById('root'));
 }
 
 /**
